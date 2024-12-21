@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Elegant Deep Blue */
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+
+  /* Clean White */
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+
+  /* Popover */
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+
+  /* Royal Purple */
+  --primary: 262 83% 58%;
+  --primary-foreground: 210 40% 98%;
+
+  /* Soft Gold */
+  --secondary: 41 96% 71%;
+  --secondary-foreground: 222 47% 11%;
+
+  /* Muted Elements */
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+
+  /* Teal Accent */
+  /* --accent: 173 80% 40%; */
+  /* --accent-foreground: 210 40% 98%; */
+  --accent: 262 72% 64%; /* Ungu terang */
+  --accent-foreground: 210 40% 98%; /* Warna teks pada hover */
+
+  /* Danger Red */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+
+  /* Borders & Inputs */
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --ring: 262 83% 58%;
+
+  --radius: 0.75rem;
+
+  --hover: 262 72% 64%; /* Ungu terang */
+  --hover-foreground: 210 40% 98%; /* Warna teks pada hover */
+}
+
+.dark {
+  /* Dark Mode Adjustments */
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+
+  --card: 217 33% 17%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 217 33% 17%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 262 83% 58%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 41 96% 71%;
+  --secondary-foreground: 222 47% 11%;
+
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+
+  --accent: 173 80% 40%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --ring: 262 83% 58%;
+}
+
+.hover\\:bg-hover:hover {
+  background-color: hsl(var(--hover));
+  color: hsl(var(--hover-foreground));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+  }
+}
